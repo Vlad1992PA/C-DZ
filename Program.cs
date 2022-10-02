@@ -28,7 +28,9 @@ internal partial class Program
             {
                 count ++;
             }
-            Console.
+            
         }
+
+        Console.WriteLine(nums);        
     }
 }
