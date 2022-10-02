@@ -1,8 +1,10 @@
-﻿/* Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+﻿/* 
+Задача 8: 
+Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
-4 -> да
--3 -> нет
-7 -> нет*/
+5 -> 2, 4
+8 -> 2, 4, 6, 8
+*/
 
 internal partial class Program
 {
@@ -10,16 +12,23 @@ internal partial class Program
     {
         Console.Write("ведите число: ");
         int num = Convert.ToInt32(Console.ReadLine());
-        int delitel = num % 2;
+        int delitel = 2;
         int zero = 0;
+        int count = 1;
+        string nums = "";
 
-        if (delitel == zero)
+        while (count <= num)
         {
-            Console.WriteLine("Число: " + num + " четное");
-        }
-        else
-        {
-            Console.WriteLine("Число: " + num + " не четное");
+            if (count % delitel == zero)
+            {
+                nums = nums + (Convert.ToString(count) + ", ");
+                count ++;
+            }
+            else
+            {
+                count ++;
+            }
+            Console.
         }
     }
 }
