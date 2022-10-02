@@ -1,21 +1,25 @@
-﻿/* задача №1
-*Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+﻿/* Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
-a = 5; b = 7 -> max = 7
-a = 2 b = 10 -> max = 10
-a = -9 b = -3 -> max = -3*/
+4 -> да
+-3 -> нет
+7 -> нет*/
 
-Console.Write("ведите первое число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("ведите second число: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
-if (num1 > num2)
+internal partial class Program
 {
-    Console.WriteLine("max = " + num1);
-}
-else
-{
-    Console.WriteLine("max = " + num2);
-}
+    private static void Main(string[] args)
+    {
+        Console.Write("ведите число: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+        int delitel = num % 2;
+        int zero = 0;
 
-
+        if (delitel == zero)
+        {
+            Console.WriteLine("Число: " + num + " четное");
+        }
+        else
+        {
+            Console.WriteLine("Число: " + num + " не четное");
+        }
+    }
+}
