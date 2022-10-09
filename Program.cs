@@ -1,36 +1,32 @@
 ﻿/* 
-Задача 8: 
-Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и 
+проверяет, является ли этот день выходным.
 
-5 -> 2, 4
-8 -> 2, 4, 6, 8
+6 -> да
+7 -> да
+1 -> нет
 */
 
 internal partial class Program
 {
     private static void Main(string[] args)
     {
-        Console.Write("ведите число: ");
+        Console.Write("ведите число дня недели от 1 до 7: ");
         int num = Convert.ToInt32(Console.ReadLine());
-        int delitel = 2;
-        int zero = 0;
-        int count = 1;
-        string nums = "";
-
-        while (count <= num)
+        
+        if (num == 6)
         {
-            if (count % delitel == zero)
-            {
-                nums = nums + (Convert.ToString(count) + ", ");
-                count ++;
-            }
-            else
-            {
-                count ++;
-            }
-            
+            Console.WriteLine("Это выходной день");
         }
 
-        Console.WriteLine(nums);        
+        else if (num == 7)
+        {
+            Console.WriteLine("Это выходной день");
+        }
+
+        else
+        {
+            Console.WriteLine("Это не выходной день");
+        }       
     }
 }
