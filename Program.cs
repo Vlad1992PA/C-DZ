@@ -1,21 +1,18 @@
-﻿/* задача №2
-*Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+﻿/*
+*Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает
+вторую цифру этого числа.
 
-a = 5; b = 7 -> max = 7
-a = 2 b = 10 -> max = 10
-a = -9 b = -3 -> max = -3*/
+456 -> 5
+782 -> 8
+918 -> 1*/
 
-Console.Write("ведите первое число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("ведите second число: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
-if (num1 > num2)
-{
-    Console.WriteLine("max = " + num1);
-}
-else
-{
-    Console.WriteLine("max = " + num2);
-}
+Console.Write("ведите трёх значное число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int num1 = num /10;
+int num3 = num1 % 10;
+
+Console.WriteLine("the second digit = " + num3);
+
+
 
 
