@@ -6,7 +6,7 @@
 782 -> 8
 918 -> 1*/
 
-Console.Write("ведите трёх значное число: ");
+Console.Write("введите трёх значное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int num1 = num /10;
 int num3 = num1 % 10;
