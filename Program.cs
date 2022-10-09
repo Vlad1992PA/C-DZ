@@ -13,14 +13,19 @@ internal partial class Program
 {
     private static void Main(string[] args)
     {
-        Console.Write("ведите число: ");
+        Console.Write("ведите тех значное число: ");
         int num = Convert.ToInt32(Console.ReadLine());
-        if num >=100
+        int digit = 0;
+        if (num < 1000 & num > 99)
         {
-
+            digit = num % 10;
+            Console.WriteLine(digit);
         }
-
-    
-        Console.WriteLine(nums);        
+        else
+        {
+            Console.WriteLine("третьей цифры нет."); 
+        }
+         
+                
     }
 }
