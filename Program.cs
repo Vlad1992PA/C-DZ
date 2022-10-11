@@ -15,7 +15,7 @@ internal partial class Program
       int num = Convert.ToInt32(Console.ReadLine());
       for  (int i = 0; i<= num; i++)
       {
-        Console.WriteLine(i * i * i);
+        Console.Write($"{i*i*i} ");
       }
        
     }
