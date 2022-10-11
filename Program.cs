@@ -17,6 +17,6 @@ internal partial class Program
       {
         Console.Write($"{i*i*i} ");
       }
-       
+       // Возможно нужно было разбить на несколько столбиков. Не указан вид таблицы
     }
 }
