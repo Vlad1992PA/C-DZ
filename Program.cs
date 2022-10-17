@@ -1,9 +1,10 @@
-﻿/* Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+/*Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
-3, 5 -> 243 (3⁵)
+452 -> 11
 
-2, 4 -> 16
-*/
+82 -> 10
+
+9012 -> 12*/
 
 using System;
 
@@ -13,23 +14,22 @@ public class HelloWorld
     {
         
         
-        int Met(int x, int y)
+        int Met(string nums)
         {
-            int sum = Convert.ToInt32(Math.Pow(x, y));
+            int sum = 0;
+            for  (int i = 0; i< nums.Length; i++)
+            {
+                int x = Convert.ToInt32(nums[i].ToString());
+                sum = sum + x;
+            }
             return sum;
         }
+            
+            Console.WriteLine("Введите число");
+            string num = Console.ReadLine();
+            int summa = Met(num);
         
-        int a = 1;
-        while (a>0)
-        {
-            Console.Write("Enter a number: ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the degree: ");
-            int stepen = Convert.ToInt32(Console.ReadLine());
-            int stroka = Met(num1, stepen);
-            Console.WriteLine (stroka);
-            a=a+1;
-        }
+            Console.WriteLine("Hello, world! ^ " + summa);
         
     }
 }
