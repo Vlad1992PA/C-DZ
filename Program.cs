@@ -1,21 +1,35 @@
-﻿/* задача №2
-*Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+﻿/* Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 
-a = 5; b = 7 -> max = 7
-a = 2 b = 10 -> max = 10
-a = -9 b = -3 -> max = -3*/
+3, 5 -> 243 (3⁵)
 
-Console.Write("ведите первое число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("ведите second число: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
-if (num1 > num2)
+2, 4 -> 16
+*/
+
+using System;
+
+public class HelloWorld
 {
-    Console.WriteLine("max = " + num1);
+    public static void Main(string[] args)
+    {
+        
+        
+        int Met(int x, int y)
+        {
+            int sum = Convert.ToInt32(Math.Pow(x, y));
+            return sum;
+        }
+        
+        int a = 1;
+        while (a>0)
+        {
+            Console.Write("Enter a number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the degree: ");
+            int stepen = Convert.ToInt32(Console.ReadLine());
+            int stroka = Met(num1, stepen);
+            Console.WriteLine (stroka);
+            a=a+1;
+        }
+        
+    }
 }
-else
-{
-    Console.WriteLine("max = " + num2);
-}
-
-
